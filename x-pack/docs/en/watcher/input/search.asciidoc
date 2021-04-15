@@ -149,8 +149,8 @@ watch execution context. For example:
 * To access a particular hit, use its zero-based array index. For example, to
   get the third hit, use `ctx.payload.hits.hits.2`.
 * To get a field value from a particular hit, use
-  `ctx.payload.hits.hits.<index>.fields.<fieldname>`. For example, to get the
-  message field from the first hit, use `ctx.payload.hits.hits.0.fields.message`.
+  `ctx.payload.hits.hits.<index>.<fieldname>`. For example, to get the
+  message field from the first hit, use `ctx.payload.hits.hits.0.message`.
 
 NOTE: The total number of hits in the search response is returned as an object
 in the response. It contains a `value`, the number of hits, and a `relation` that
